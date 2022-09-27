@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500&display=swap');
+
+.main-bar {
+    display: none;
+}
+
+.nav-button {
+    display: none;
+}
+
+@media (max-width:1280px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .nav-button {
+        border: none;
+        background-color: white;
+    }
+
+    .main-bar {
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        animation-duration: .3s;
+        animation-timing-function: linear;
+        animation-direction: alternate;
+        visibility: hidden;
+    }
+
+    @keyframes nav-bar-ani {
+        0% {
+            margin-top: -50vh;
+        }
+
+        100% {
+            margin-top: 0;
+        }
+    }
+
+    .nav-ul {
+        list-style: none;
+        font-size: 2em;
+        padding: 10px;
+        font-family: 'Baloo Tamma 2';
+    }
+
+    .nav-ul li {
+        margin-top: 30px;
+    }
+
+    .nav-ul li:hover {
+        color: grey;
+    }
+
+    .fa-xmark {
+        position: absolute;
+        visibility: hidden;
+        bottom: 95%;
+        left: 4%;
+
+    }
+
+    .fa-bars {
+        position: absolute;
+        bottom: 95%;
+        left: 4%;
+    }
+}
