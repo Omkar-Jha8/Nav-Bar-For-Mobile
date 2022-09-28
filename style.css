@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@500&display=swap');
 
 .main-bar {
-    display: none;
+    visibility:hidden;
 }
 
 .nav-button {
-    display: none;
+    visibility:hidden;
 }
 
 @media (max-width:1280px) {
@@ -17,6 +17,7 @@
     .nav-button {
         border: none;
         background-color: white;
+        visibility:visible;
     }
 
     .main-bar {
@@ -29,7 +30,7 @@
         animation-duration: .3s;
         animation-timing-function: linear;
         animation-direction: alternate;
-        visibility: hidden;
+        visibility:visible;
     }
 
     @keyframes nav-bar-ani {
